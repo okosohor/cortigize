@@ -9,7 +9,7 @@
     "react/jsx-indent": ["error", 2],
     "react/jsx-indent-props": ["error", 2],
     "react/jsx-max-props-per-line": ["error", { "maximum": 3 }],
-    "semi": ["error", "always"],
+    "semi": ["warn", "always"],
     "eol-last": ["error", "always"],
     "comma-dangle": ["error", "always-multiline"]
     
