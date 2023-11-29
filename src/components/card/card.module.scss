@@ -1,0 +1,68 @@
+@import "./utils/variables.scss";
+
+.card {
+
+  display: flex;
+  flex-direction: column;
+  padding: 22px 16px 18px 44px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  width: 296px;
+  background: $black-2;
+  border-radius: 8px;
+  position: relative;
+
+  // &:last-child {
+  //   background: $black-2;
+  //     background: linear-gradient(180deg, $black-2 0%, rgba(41,41,48,1) 80%);
+  //     margin-bottom: 8px;
+  // }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: var(--White-1, #F5F5F5);
+    font-family: 'TT Smalls';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+  }
+
+  &__salary {
+
+    color: var(--Gray-1, #6B6B7B);
+    font-family: 'TT Smalls';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 2px;
+
+    &--bold-yellow {
+      color: var(--Yellow, #EFB62B);
+      text-align: right;
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    color: var(--Gray-1, #6B6B7B);
+    font-family: 'TT Smalls';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; 
+  }
+
+  &__image {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+}
